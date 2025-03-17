@@ -1,0 +1,186 @@
+body{
+    color: $off-white;
+    background-color: $light-dark;
+    font-family: $font-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $off-white !important;
+    text-transform: uppercase;
+    font-family: $font-headers !important;
+  }
+
+nav.keepdark {
+    background-color: $grey-level4;
+    .navbar-brand {
+        color: $off-white;
+    }
+    .navbar-nav .nav-link {
+        color: $off-white;
+    }
+    .navbar-nav .nav-link:hover {
+        color: $grey-level4;
+        background-color: $off-white;
+    }
+    .learn-site-menu{
+        color: $grey-level3;
+        font-size: 2em;
+        background-color: $blue;
+        text-transform: uppercase;
+        font-family: $font-headers;
+        font-weight: normal;
+      }
+
+      .learn-site-item {
+        color: $blue !important;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-family: $font-headers;
+      }
+      .observe-site-item {
+        color: $red !important;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-family: $font-headers;
+      }
+      .datalab-site-item {
+        color: $green !important;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-family: $font-headers;
+      }
+      .btn {
+        border-color: $grey-level4;
+      }
+}
+
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: $grey-level4;
+    background-color: $blue;
+}
+
+
+.bg-white {
+    background-color: $grey-level4 !important;
+    color: $off-white !important;
+}
+
+.course-section .sectionname>a,
+.primary-navigation .navigation .nav-link {
+    color: $off-white;
+}
+
+.drawer,
+.drawercontent {
+    background-color: $grey-level1;
+    .drawerheader btn {
+        color: $off-white;
+    }
+    .courseindexsection {
+        .courseindexsection-title {
+            color: $off-white;
+        }
+        .courseindexsection-content {
+            background-color: $grey-level2;
+        }
+    }
+    .courseindex .courseindex-item .courseindex-link,
+    .courseindex .courseindex-item .courseindex-chevron {
+        color: $off-white;
+    }
+}
+
+#region-main {
+    background-color: transparent;
+}
+
+#page.drawers .main-inner {
+    background-color: $grey-level2;
+}
+
+.pagelayout-frontpage #frontpage-available-course-list,
+.pagelayout-frontpage #site-news-forum {
+    background-color: $grey-level1;
+}
+
+.text-dark {
+    color: $off-white !important;
+}
+
+.usermenu {
+    .btn {
+        color: $off-white;
+    }
+}
+
+pre {
+    color: $off-white;
+}
+
+.popover-heaader,
+.popover-body{
+    color: $grey-level3;
+}
+
+.activity-item .activity-completion button.btn,
+.activity-item .activity-completion a[role="button"].btn,
+.dropdown-item,
+.custom-select,
+.form-control,
+.dropdown-menu,
+.moodle-dialogue-base .moodle-dialogue-wrap,
+.modal-content,
+.chooserdialogue .moodle-dialogue-wrap .moodle-dialogue-bd,
+.jschooser .choosercontainer #chooseform .instruction,
+.jschooser .choosercontainer #chooseform .typesummary,
+#page-mod-quiz-edit ul.slots li.section .content {
+    color: $off-white;
+    background-color: $grey-level2;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link,
+.form-control:focus,
+.choosercontainer #chooseform .selected,
+.card  {
+    background-color: $grey-level1;
+}
+
+.generaltable thead .sticky-column, .generaltable tbody tr:nth-of-type(even) {
+    background-color: $grey-level1;
+}
+
+.secondary-navigation .navigation {
+    background-color: $grey-level2;
+}
+
+.moremenu .nav-tabs,
+.moremenu .nav.nav-tabs .nav-item .nav-link {
+    background-color: $grey-level3;
+    border-color: $grey-level3;
+    border-radius: 0;
+}
+
+#page-admin-search .tab-content .tab-pane h4,
+#page-admin-search .tab-content .tab-pane a {
+    color: $off-white;
+}
+
+.homepage-carousel {
+    height: 500px;
+}
+
+.frontpage-course-block {
+    background-color: $grey-level2;
+    margin-bottom:20px;
+    border-radius: 10px;
+    .col-2 {
+        padding-left:0;
+        img {
+            border-radius: 10px 0 0 10px;
+        }
+    }
+}

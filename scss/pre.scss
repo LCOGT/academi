@@ -1,0 +1,94 @@
+// Bootstrap variables
+
+$primary: #00ADEF;
+$primary-light: #F2F7F8;
+$blue: #00ADEF;
+$red: #EF4123;
+$green: #A6CE39;
+$teal: #12CBC4;
+$purple: #9980FA;
+$orange: #FFC312;
+$red-alt: #ED4C67;
+$green-dark:#607730;
+$teal: #157675;
+$purple-dark: #595090;
+$red-dark: #833647;
+$orange-dark: #8C721C;
+$off-white: #fcfcfc;
+$indigo:  #6610f2 !default;
+$pink:    #db1a74 !default;
+$yellow:  #ff7518 !default;
+$cyan:    #008196 !default;
+$grey-level1: #3b4249;
+$grey-level2: #262e35;
+$grey-level3: #192026;
+$grey-level4: #13181D;
+
+$white:  $grey-level4 !default;
+$gray-100: #1d2125 !default;
+$gray-200: #343a40 !default;
+$gray-300: #495057 !default;
+$gray-400: #6a737b !default;
+$gray-500: #8f959e !default;
+$gray-600: #ced4da !default;
+$gray-700: #dee2e6 !default;
+$gray-800: #e9ecef !default;
+$gray-900: #f8f9fa !default;
+$black:    $off-white !default;
+
+$primary:       $blue !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $orange !default;
+$danger:        $red-alt !default;
+$secondary:     $red !default;
+
+$dark: $grey-level4; // Header and footer only
+$light-dark: $grey-level3; // body background color
+$big-screen: 1200px;
+$body-background: $grey-level3;
+$header-size1: 2.5rem;
+$header-size2: 1.9rem;
+$header-size3: 1.25rem;
+$text-color: $off-white;
+
+$info-outline:    #1f7e9a;
+$warning-outline: #a6670e;
+
+// Tables
+$table-accent-bg:             rgba($black, .03) !default;
+
+// Options
+$enable-responsive-font-sizes: true !default;
+
+// Body
+$body-color:    $gray-900 !default;
+
+// Fonts
+$font-size-base: 0.9375rem !default;
+$rfs-base-font-size: 0.9rem !default;
+$headings-font-weight:   700 !default;
+
+// Navbar
+$navbar-dark-hover-color:           rgba($green, 1) !default;
+$navbar-light-color:                rgba($black, 0.6) !default;
+$navbar-light-hover-color:          rgba($black, .9) !default;
+
+// Breadcrumbs
+$breadcrumb-padding-y:              .5rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-margin-bottom:          0 !default;
+$breadcrumb-bg:                     transparent !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
+
+@font-face {
+    font-family: 'Unica One';
+    src: url([[font:theme|UnicaOne-Regular.ttf]]) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-headers: 'Unica One', sans-serif;
+$font-content: "Quattrocento Sans", sans-serif;
