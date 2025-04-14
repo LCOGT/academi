@@ -5,7 +5,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $off-white !important;
+    color: $off-white;
     text-transform: uppercase;
     font-family: $font-headers !important;
   }
@@ -20,8 +20,27 @@ nav.keepdark {
     }
     .navbar-nav .nav-link:hover {
         color: $grey-level4;
-        background-color: $off-white;
+        background-color: $primary;
     }
+    .navbar-nav .nav-link.learn-site-menu {
+        color: $grey-level4;
+      }
+      a.observe-site-menu {
+        color: $grey-level4;
+        font-size: 2em;
+        background-color: $red;
+        text-transform: uppercase;
+        font-family: $font-headers;
+        font-weight: normal;
+      }
+      a.datalab-site-menu {
+        color: $grey-level4;
+        font-size: 2em;
+        background-color: $green;
+        text-transform: uppercase;
+        font-family: $font-headers;
+        font-weight: normal;
+      }
     .learn-site-menu{
         color: $grey-level3;
         font-size: 2em;
@@ -33,25 +52,42 @@ nav.keepdark {
 
       .learn-site-item {
         color: $blue !important;
-        font-size: 1.25em;
+        font-size: 1.5em;
         text-transform: uppercase;
         font-family: $font-headers;
       }
       .observe-site-item {
         color: $red !important;
-        font-size: 1.25em;
+        font-size: 1.5em;
         text-transform: uppercase;
         font-family: $font-headers;
       }
       .datalab-site-item {
         color: $green !important;
-        font-size: 1.25em;
+        font-size: 1.5em;
         text-transform: uppercase;
         font-family: $font-headers;
       }
       .btn {
         border-color: $grey-level4;
       }
+      .btn:not(:disabled):not(.disabled) {
+        border: none;
+      }
+      .dropdown-menu {
+        background-color: $grey-level4;
+        border: none;
+      }
+}
+
+.navbar.fixed-top{
+    border-bottom:transparent;
+    min-height: 64px;
+    padding: .5rem .75rem;
+  }
+
+.navbar.fixed-top .navbar-brand .logo {
+    max-height: 1.75rem;
 }
 
 .navbar-dark .navbar-nav .show>.nav-link,
@@ -93,6 +129,60 @@ nav.keepdark {
     }
 }
 
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .activities-wrapper .general-section-activities .activity:not(.modtype_label){
+    background-color: $grey-level1;
+    border:none;
+    color: $off-white;
+}
+
+body#page-course-view-remuiformat .remui-format-card.single-section-format .sections .section .section-details .general-single-card .header-progresbar-wrapper .section-title {
+    color: $off-white;
+    font-size: 2.5rem;
+}   
+
+body#page-course-view-remuiformat .remui-format-card.single-section-format .activity-cards .activity > div,
+body#page-course-view-remuiformat .remui-format-card.single-section-format .activity-cards.section .activity > div {
+    background-color: $grey-level1;
+    border:none;
+    color: $off-white;
+    a {
+        color: $off-white;
+    }
+    a:hover {
+        color: $grey-level4;
+        background-color: $off-white;
+    }
+}
+
+.promoted-courses .course-box .info {
+    background-color: $grey-level1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    .course-name {
+        color: $off-white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.course-box figure img {
+    border-radius: 10px;
+}
+
+figcaption {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family:$font-headers;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    color: $grey-level4;
+}
+
 #region-main {
     background-color: transparent;
 }
@@ -103,7 +193,15 @@ nav.keepdark {
 
 .pagelayout-frontpage #frontpage-available-course-list,
 .pagelayout-frontpage #site-news-forum {
+    background-color: $grey-level3;
+}
+
+.promoted-courses {
     background-color: $grey-level1;
+}
+
+.marketing-spot {
+    background-color: $grey-level3;
 }
 
 .text-dark {
@@ -174,7 +272,7 @@ pre {
 }
 
 .frontpage-course-block {
-    background-color: $grey-level2;
+    background-color: $grey-level1;
     margin-bottom:20px;
     border-radius: 10px;
     .col-2 {
@@ -182,5 +280,37 @@ pre {
         img {
             border-radius: 10px 0 0 10px;
         }
+    }
+}
+
+.login-wrapper,
+.login-heading,
+.login-instructions {
+    color: $grey-level4;
+}
+
+.performanceinfo {
+    background-color: $grey-level2;
+    color: $off-white;
+}
+
+.table-dark {
+    background-color: #bdbec0;
+}
+// Course plugin 
+
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .generaldetails .generalsectioninfo .coursesummary {
+    color: $off-white;
+}
+
+body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-title {
+    color: $off-white;
+    font-size: 2.5rem;
+}
+
+.remuiformat {
+    color:$grey-level4;
+    h1, h2, h3, h4, h5, h6, p {
+        color:$grey-level4;
     }
 }

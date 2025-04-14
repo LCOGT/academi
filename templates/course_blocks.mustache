@@ -74,34 +74,41 @@
     {{#blockisempty}}
         <div class="promoted-courses" id="promoted-courses">
             <div class="container">
-                {{#promotedcontent}}
-                    <div class="titlebar">
+                <div class="row">
+                    <div class="col-4">
+                    {{#coursestatus}}
+                            {{#courses}}
+                                {{#.}}
+                                <div class="course-box">
+                                    <figure class="thumb">
+                                        <a href="{{courseurl}}"><img src="{{imgurl}}" alt="{{coursename}}" class="img-responsive"></a>
+                                        <figcaption>{{coursename}}</figcaption>
+                                    </figure>
+                                </div>
+                            {{/.}}
+                            {{/courses}}
+                    {{/coursestatus}}
+                    </div>
+                    <div class="col-8">
+                        <div class="titlebar">
+                        {{#promotedcontent}}
                         {{#promotedtitle}}
                             <h2><b>{{promotedtitle}}</b></h2>
                         {{/promotedtitle}}
                         {{#promotedcoursedesc}}
                             <p>{{promotedcoursedesc}}</p>
                         {{/promotedcoursedesc}}
-                    </div>
-                {{/promotedcontent}}
-                {{#coursestatus}}
-                    <div class="promatedcourse-slider" data-crow="{{totalfcourse}}">
-                        {{#courses}}
+                        {{/promotedcontent}}
+                        {{#coursestatus}}
+                            {{#courses}}
                             {{#.}}
-                                <div class="slider-item">
-                                    <div class="course-box">
-                                        <div class="thumb">
-                                            <a href="{{courseurl}}"><img src="{{imgurl}}" width="135" height="135" alt=""></a>
-                                        </div>
-                                        <div class="info">
-                                            <h5><a href="{{courseurl}}"> {{coursename}} </a></h5>
-                                        </div>
-                                    </div>
-                                </div>
+                            <a href="{{courseurl}}">Jump Back In</a>
                             {{/.}}
-                        {{/courses}}
+                            {{/courses}}
+                        {{/coursestatus}}
                     </div>
-                {{/coursestatus}}
+                </div>
+                </div>
             </div>
         </div>
     {{/blockisempty}}

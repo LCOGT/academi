@@ -208,6 +208,7 @@ class course_renderer extends \core_course_renderer {
                     $info['courseurl'] = $courseurl;
                     $info['imgurl'] = $imgurl;
                     $info['coursename'] = $course->get_formatted_name();
+                    $info['summary'] = $summary;
                     $info['active'] = ($i == 1) ? true : false;
                     $blocks[] = $info;
                     $i++;
@@ -239,7 +240,7 @@ class course_renderer extends \core_course_renderer {
 
         $output = '';
         $themeblocks = new \theme_academi\academi_blocks();
-        $beforelayout = [FRONTPAGEPROMOTEDCOURSE, FRONTPAGESITEFEATURES, FRONTPAGEMARKETINGSPOT];
+        $beforelayout = [FRONTPAGEMARKETINGSPOT, FRONTPAGEPROMOTEDCOURSE, FRONTPAGESITEFEATURES];
         $afterlayout = [FRONTPAGEJUMBOTRON];
         if (isloggedin() && !isguestuser() && isset($CFG->frontpageloggedin)) {
             $frontpagelayout = explode(",", $CFG->frontpageloggedin);
