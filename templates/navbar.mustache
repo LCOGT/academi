@@ -63,14 +63,9 @@
         </button>
 
         <a href="{{{ config.homeurl }}}" class="navbar-brand d-none d-md-flex align-items-center m-0 me-4 p-0 aabtn">
-
-            {{# output.should_display_navbar_logo }}
-                <img src="{{output.get_compact_logo_url}}" class="logo me-1" alt="{{sitename}}">
-            {{/ output.should_display_navbar_logo }}
-            {{^ output.should_display_navbar_logo }}
-                {{{ sitename }}}
-            {{/ output.should_display_navbar_logo }}
+            <div class="navbar-brand d-none d-md-block logo me-1"><img src="{{output.get_logo_url}}"></div>
         </a>
+        <div class="navbar-brand d-md-none logo me-1"><img src="{{output.get_compact_logo_url}}"></div> 
 
         <ul class="navbar-nav d-none d-md-flex my-1 px-1">
             <li role="none" class="nav-item dropdown" data-region="sitebutton" >
@@ -78,7 +73,7 @@
                     Learn
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="https://learn.lco.global" class="dropdown-item observe-site-item">Observe &nbsp; <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="https://photonranch.lco.global" class="dropdown-item observe-site-item">Explore &nbsp; <i class="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="https://datalab.lco.global" class="dropdown-item datalab-site-item">Datalab &nbsp; <i class="fa-solid fa-chevron-right"></i></a></li>
                 </ul>
             </li>
@@ -107,6 +102,9 @@
                 {{/usermenu}}
             </div>
             {{{ output.edit_switch }}}
+            <a href="https://lco.global" class="d-none d-md-flex m-0 me-4 p-0 aabtn">
+                <div class="navbar-brand d-none d-lg-block logo"><img src="/theme/academi/layout/PoweredbyLCO-white.png"/></div>
+            </a>
         </div>
     </div>
 </nav>

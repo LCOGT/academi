@@ -44,7 +44,8 @@ $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
 $THEME->csspostprocess = 'theme_academi_process_css';
 
-$THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
+$THEME->iconsystem = \core\output\icon_system::STANDARD;
+$THEME->fontawesome = false;
 
 $THEME->haseditswitch = true;
 

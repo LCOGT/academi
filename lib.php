@@ -50,15 +50,6 @@ define('LOGO', 0);
 define('SITENAME', 1);
 define('LOGOANDSITENAME', 2);
 
-/**
- * Load the Jquery and migration files
- * @param moodle_page $page
- * @return void
- */
-function theme_academi_page_init(moodle_page $page) {
-    global $CFG;
-    $page->requires->js_call_amd('theme_academi/theme', 'init');
-}
 
 /**
  * Loads the CSS Styles and replace the background images.

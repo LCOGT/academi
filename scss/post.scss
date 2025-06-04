@@ -1,7 +1,11 @@
-body{
+body {
     color: $off-white;
     background-color: $light-dark;
     font-family: $font-content;
+}
+
+.section-details li {
+    color: $off-white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,6 +13,19 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-family: $font-headers !important;
   }
+
+.green {
+    color: $green !important;
+}
+.blue {
+    color: $blue !important;
+}
+.red {
+    color: $red !important;
+}
+.red-alt {
+    color: $red-alt !important;
+}
 
 nav.keepdark {
     background-color: $grey-level4;
@@ -19,8 +36,7 @@ nav.keepdark {
         color: $off-white;
     }
     .navbar-nav .nav-link:hover {
-        color: $grey-level4;
-        background-color: $primary;
+        background-color: $grey-level2;
     }
     .navbar-nav .nav-link.learn-site-menu {
         color: $grey-level4;
@@ -86,18 +102,18 @@ nav.keepdark {
     padding: .5rem .75rem;
   }
 
-.navbar.fixed-top .navbar-brand .logo {
-    max-height: 1.75rem;
-}
-
 .navbar-dark .navbar-nav .show>.nav-link,
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: $grey-level4;
-    background-color: $blue;
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $off-white;
+    background-color: $grey-level2;
 }
 
+#moremenu a.nav-link {
+    height: 54px;
+}
 
 .bg-white {
     background-color: $grey-level4 !important;
@@ -154,6 +170,10 @@ body#page-course-view-remuiformat .remui-format-card.single-section-format .acti
     }
 }
 
+body#page-course-view-remuiformat.limitedwidth header.hasbackground.design-1 .header-sub-section .progress-resume-wrapper {
+    z-index: 100;
+}
+
 .promoted-courses .course-box .info {
     background-color: $grey-level1;
     border-radius: 10px;
@@ -188,7 +208,7 @@ figcaption {
 }
 
 #page.drawers .main-inner {
-    background-color: $grey-level2;
+    background-color: $grey-level3;
 }
 
 .pagelayout-frontpage #frontpage-available-course-list,
@@ -247,12 +267,22 @@ pre {
     background-color: $grey-level1;
 }
 
+// Admin styles
+
+.path-backup .backup-section,
 .generaltable thead .sticky-column, .generaltable tbody tr:nth-of-type(even) {
     background-color: $grey-level1;
 }
 
-.secondary-navigation .navigation {
+.path-backup .mform .root_setting:nth-of-type(even),
+.path-backup .mform .grouped_settings:nth-of-type(even),
+.path-backup .mform .root_setting:nth-of-type(even),
+.path-backup .mform .grouped_settings:nth-of-type(even) {
     background-color: $grey-level2;
+}
+
+.secondary-navigation .navigation {
+    background-color: transparent;
 }
 
 .moremenu .nav-tabs,
@@ -267,12 +297,48 @@ pre {
     color: $off-white;
 }
 
+body#page-course-view-remuiformat .card-section-rightnav,
+body#page-course-view-remuiformat .card-section-leftnav {
+  background-color: $green;
+  border: none;
+  .btn:not(:disabled):not(.disabled) {
+    border-color: transparent;
+    }
+}
+
+body#page-course-view-remuiformat .card-section-rightnav a,
+body#page-course-view-remuiformat .card-section-leftnav a {
+  color: $grey-level4;
+}
+
+body#page-course-view-remuiformat header.hasbackground.design-1 .header-main-section .category .badge {
+    background-color: $teal;
+    color: $grey-level4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body#page-course-view-remuiformat .remui-format-card.all-section-format .section .single-card,
+body#page-course-view-remuiformat .remui-format-card.single-section-format .activity-cards
+{
+    background-color: $grey-level1;
+    border: none;
+    .sectionname {
+        color: $off-white;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+}
+
+// Home page
+
 .homepage-carousel {
     height: 500px;
 }
 
 .frontpage-course-block {
-    background-color: $grey-level1;
+    background-color: $grey-level2;
     margin-bottom:20px;
     border-radius: 10px;
     .col-2 {
@@ -285,7 +351,9 @@ pre {
 
 .login-wrapper,
 .login-heading,
-.login-instructions {
+.login-instructions,
+.login-container h2,
+.file-picker .fp-content  {
     color: $grey-level4;
 }
 
@@ -297,6 +365,19 @@ pre {
 .table-dark {
     background-color: #bdbec0;
 }
+.btn.btn-icon {
+    background-color: $grey-level1;
+    color: $off-white;
+}
+
+.popover-region-container {
+    background-color: $grey-level4;
+}
+
+.content-item-container.unread {
+    background-color: $grey-level1;
+}
+
 // Course plugin 
 
 body#page-course-view-remuiformat .course-content .sections #section-0 .general-section .section-details .generaldetails .generalsectioninfo .coursesummary {
@@ -314,3 +395,123 @@ body#page-course-view-remuiformat .course-content .sections #section-0 .general-
         color:$grey-level4;
     }
 }
+/// Questionnaire formatting
+/// 
+.qn-question {
+    background-color: $grey-level1;
+    font-size: 120%;
+}
+
+#page-mod-questionnaire-complete td.notanswered,
+#page-mod-questionnaire-preview td.notanswered,
+.qn-info {
+    background: transparent;
+}
+
+#page-mod-questionnaire-complete .raterow:hover,
+#page-mod-questionnaire-preview .raterow:hover {
+    background-color: #A6CE39;
+    color: $grey-level4;
+}
+
+.que .formulation {
+    background-color: $grey-level1;
+    color: $off-white;
+}
+
+#block-region-side-pre .block {
+    border-radius:10px;
+}
+
+.block .card-body .content:not(.activityiconcontainer) {
+    background-color: $grey-level2;
+    color: $off-white;
+}
+
+table.quizreviewsummary th.cell {
+    background-color: $grey-level1;
+    color: $off-white;
+    font-weight: bold;
+}
+
+table.quizreviewsummary td.cell {
+    background-color: $grey-level2;
+    color: $off-white;
+}
+
+#page-mod-questionnaire-questions .qn-container input {
+    height: 24px;
+    background: #fff;
+}
+
+// Media
+
+.course-highlights {
+    background-color: $grey-level1;
+    margin-bottom: 10px;
+}
+
+.ptr-areas {
+    padding: 3rem 0;
+}
+
+.ptr-area-box {
+    background-color: #262e35;
+    text-align: center;
+    .title {
+        color: #fcfcfc;
+        font-family: $font-headers;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        padding: 0.5em 0;
+    }
+}
+
+
+blockquote {
+    background: linear-gradient(90deg, rgba(28,127,238,1)  0%,
+        rgba(47,201,226,1) 16%,
+        rgba(63,218,216,1) 32%,
+        rgba(79,220,74,1) 48%,
+        rgba(208,222,33,1) 65%,
+        rgba(255,154,0,1)80%,
+        rgba(255,0,0,1)100%);
+    border-left: transparent;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+    p {
+        display: inline;
+        font-size: 1.75em;
+        font-family: $font-headers;
+        text-transform: uppercase;
+        color: $grey-level3;
+    }
+  }
+blockquote:before {
+    color: $grey-level3;
+    font-size: 1.75em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    font-family: 'Font Awesome 6 Free';
+    /* Set the weight for this icon style */
+    font-weight: 900;
+    /* Make sure icons render pixel-perfect */
+    -webkit-font-smoothing: antialiased;
+    /* Set the Unicode value for the "fa-ghost" icon */
+    content: '\f135';
+}
+
+// Footer
+
+#footer .footer-main,
+#footer .footer-bottom {
+    background-color: $grey-level4;
+    color: $off-white;
+}
+
+.footer-dark a {
+    text-decoration: none;
+}
+
+

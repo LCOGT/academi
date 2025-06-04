@@ -108,7 +108,7 @@
                         <div class="{{colclass}}">
                             {{#mspotheadcontent}}
                                 <div class="info-head">
-                                    {{#title}}<h2><b>{{title}}</b></h2>{{/title}}
+                                    {{#title}}<h1>{{title}}</h1>{{/title}}
                                     {{#desc}}<p>{{desc}}</p>{{/desc}}
                                 </div>
                             {{/mspotheadcontent}}
@@ -129,6 +129,47 @@
                 </div>
             </div>
         </div>
+        <section class="ptr-areas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="ptr-area-title">Explore more</h2>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body ptr-area-box">
+                        <i class="fa-solid fa-book fa-3x blue"></i>
+                        <div class="title">Learn</div>
+                        <p>Explore astronomy with our activities linked to observing</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body ptr-area-box">
+                        <i class="fa-solid fa-telescope fa-3x red"></i>
+                        <i class="fa-regular fa-telescope"></i>
+                        <div class="title"><a href="https://explore.lco.global">Explore</a></div>
+                        <p>Use Photon Ranch in Real Time or schedule observations</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body ptr-area-box">
+                        <i class="fa-solid fa-pen-ruler fa-3x green"></i>
+                        <div class="title"><a href="https://datalab.lco.global">Datalab</a></div>
+                        <p>Analyze your data using browser based tools</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </section>
     {{/blockisempty}}
 {{/mspot}}
 
