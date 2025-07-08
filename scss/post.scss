@@ -11,7 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: $off-white;
     text-transform: uppercase;
-    font-family: $font-headers !important;
+    font-family: $font-headers;
   }
 
 .green {
@@ -27,10 +27,22 @@ h1, h2, h3, h4, h5, h6 {
     color: $red-alt !important;
 }
 
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $off-white;
+    background-color: $grey-level2;
+}
+
 nav.keepdark {
     background-color: $grey-level4;
     .navbar-brand {
         color: $off-white;
+        .logo img {
+            max-height: 1.75rem;
+        }
     }
     .navbar-nav .nav-link {
         color: $off-white;
@@ -41,6 +53,11 @@ nav.keepdark {
     .navbar-nav .nav-link.learn-site-menu {
         color: $grey-level4;
       }
+
+    .navbar-nav .nav-link.learn-site-menu:hover {
+        background-color: $blue;
+      }
+
       a.observe-site-menu {
         color: $grey-level4;
         font-size: 2em;
@@ -78,6 +95,15 @@ nav.keepdark {
         text-transform: uppercase;
         font-family: $font-headers;
       }
+      .observe-site-item:hover {
+        color: $grey-level4 !important;
+        background-color: $red !important;
+      }
+      .datalab-site-item:hover {
+        color: $grey-level4 !important;
+        background-color: $green !important;
+      }
+
       .datalab-site-item {
         color: $green !important;
         font-size: 1.5em;
@@ -102,14 +128,7 @@ nav.keepdark {
     padding: .5rem .75rem;
   }
 
-.navbar-dark .navbar-nav .show>.nav-link,
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: $off-white;
-    background-color: $grey-level2;
-}
+
 
 #moremenu a.nav-link {
     height: 54px;
@@ -493,13 +512,13 @@ blockquote:before {
     font-size: 1.75em;
     line-height: 0.1em;
     margin-right: 0.25em;
-    font-family: 'Font Awesome 6 Free';
+    font-family: 'Font Awesome 6 Pro';
     /* Set the weight for this icon style */
     font-weight: 900;
     /* Make sure icons render pixel-perfect */
     -webkit-font-smoothing: antialiased;
     /* Set the Unicode value for the "fa-ghost" icon */
-    content: '\f135';
+    content: '\e03e';
 }
 
 // Footer
