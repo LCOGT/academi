@@ -240,7 +240,14 @@ figcaption {
 }
 
 .marketing-spot {
-    background-color: $grey-level3;
+    background-image: url([[pix:theme|ogg]]);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .info-side-content {
+        background-color: rgba(50, 50, 50, 0.5);
+        padding: 0 10px;
+    }
 }
 
 .text-dark {
