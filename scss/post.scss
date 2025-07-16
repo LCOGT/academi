@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $off-white;
+    color: $orange;
     text-transform: uppercase;
     font-family: $font-headers;
   }
@@ -235,7 +235,8 @@ figcaption {
     background-color: $grey-level3;
 }
 
-.promoted-courses {
+.promoted-courses,
+.message-app {
     background-color: $grey-level1;
 }
 
@@ -244,6 +245,7 @@ figcaption {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: $grey-level4;
     .info-side-content {
         background-color: rgba(50, 50, 50, 0.5);
         padding: 0 10px;
@@ -519,13 +521,13 @@ blockquote:before {
     font-size: 1.75em;
     line-height: 0.1em;
     margin-right: 0.25em;
-    font-family: 'Font Awesome 6 Pro';
     /* Set the weight for this icon style */
     font-weight: 900;
     /* Make sure icons render pixel-perfect */
     -webkit-font-smoothing: antialiased;
-    /* Set the Unicode value for the "fa-ghost" icon */
-    content: '\e03e';
+    /* Set the Unicode value for the "fa-rocket" icon */
+    font: var(--fa-font-solid);
+    content: '\f135';
 }
 
 // Footer
@@ -540,4 +542,8 @@ blockquote:before {
     text-decoration: none;
 }
 
-
+@media (max-width: 1200px) {
+    .marketing-spot {
+        background-size: auto;
+    }
+}
