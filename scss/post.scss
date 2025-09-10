@@ -496,7 +496,7 @@ table.quizreviewsummary td.cell {
 }
 
 
-blockquote {
+blockquote.rainbow {
     background: linear-gradient(90deg, rgba(28,127,238,1)  0%,
         rgba(47,201,226,1) 16%,
         rgba(63,218,216,1) 32%,
@@ -516,7 +516,7 @@ blockquote {
         color: $grey-level3;
     }
   }
-blockquote:before {
+blockquote.rainbow:before {
     color: $grey-level3;
     font-size: 1.75em;
     line-height: 0.1em;
@@ -528,6 +528,34 @@ blockquote:before {
     /* Set the Unicode value for the "fa-rocket" icon */
     font: var(--fa-font-solid);
     content: '\f135';
+}
+
+blockquote.blue {
+    background-color: rgba(red($blue), green($blue), blue($blue), 0.15);
+    border-left: 10px solid $blue;
+    h3 {
+        color: $blue;
+    }
+}
+
+blockquote.green {
+    background-color: rgba(red($green), green($green), blue($green), 0.15);
+    border-left: 10px solid $green;
+    h3 {
+        color: $green;
+    }
+}
+
+blockquote.purple {
+    background-color: rgba(red($purple), green($purple), blue($purple), 0.15);
+    border-left: 10px solid $purple;
+    h3 {
+        color: $purple;
+    }
+}
+
+blockquote p {
+    padding: 10px 0;
 }
 
 // Footer
